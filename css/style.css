@@ -1,6 +1,7 @@
 body {
     min-width: 1200px;
     font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
 }
 
 header {
@@ -13,14 +14,13 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
-
 }
+
 
 .menu_list {
     color: white;
     display: flex;
     flex-direction: row;
-
 }
 
 .menu_list li {
@@ -41,13 +41,46 @@ li {
 }
 
 .first_section {
+    position: relative;
+    top: -120px;
+    left: 0;
     background-image: url("../img/Layer 1 5 (1).png");
+    min-width: 1200px;
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
-    height: 1012px;
+    background-size: cover;
+    min-height: 1012px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     color: white;
+}
+
+
+.after::before {
+    content: "";
+    display: block;
+    width: 76px;
+    height: 1px;
+    background: #18CFAB;
+    position: relative;
+  left: 4px;
+    top: 51px;
+    margin: 0 auto;
+
+}
+.after::after {
+    content: "";
+    display: block;
+    width: 76px;
+    height: 1px;
+    background: #18CFAB;
+    position: relative;
+    left: -8px;
+    top: 46px;
+    margin: 0 auto;
+
 }
 
 span {
@@ -81,29 +114,32 @@ h2 {
 
 .btn_list {
     margin-top: 130px;
+}
 
+.btn_shadow {
+    box-shadow: 0 -4px 0 #ffffff;
 }
 
 button {
     cursor: pointer;
     width: 169px;
     height: 63px;
-
     font-weight: 700;
     font-size: 15px;
     line-height: 32px;
     color: #FFFFFF;
-    border-top: 5px solid white;
     border-radius: 5px;
 }
 
 .btn_left {
     background: #18CFAB;
+    border: none;
 }
 
 .btn_right {
     background: #00CBF6;
     margin-left: 26px;
+    border: none;
 }
 
 .square {
@@ -119,6 +155,7 @@ button {
 .square-flex {
     display: flex;
     flex-wrap: nowrap;
+    margin-top: -112px;
 }
 
 .square_tiffani {
@@ -139,12 +176,13 @@ button {
 }
 
 .title_mr_top {
-    margin-top: 83px;
+    margin: 83px 0 101px 0;
 }
 
 .tabs {
     display: flex;
     background: #F8FCFE;
+    padding-left: 0;
 
 }
 
@@ -172,7 +210,6 @@ button {
 .tabs-title.active {
     background: #18CFAB;
     color: #FFFFFF;
-
 }
 
 .container {
@@ -194,7 +231,6 @@ button {
 .tabs-content li {
     display: none;
 }
-
 .tabs_nav {
     margin-bottom: 91px;
 }
@@ -209,8 +245,6 @@ button {
     line-height: 24px;
     color: #777777;
     list-style-type: none;
-
-
 }
 
 .triangle-bottom {
@@ -228,22 +262,6 @@ button {
     border-width: 15px 13.5px 0 13.5px;
     border-color: #18CFAB transparent transparent transparent;
 }
-
-/*.tabs-title.active::after {*/
-/*    position: absolute;*/
-/*    content: "";*/
-/*    display: block;*/
-/*    width: 0;*/
-/*    height: 0;*/
-/*    border-left: 12px solid transparent;*/
-/*    border-right: 12px solid transparent;*/
-/*    border-top: 12px solid #18CFAB;*/
-/*    left: calc(50% - 6px);*/
-/*    top: 59px;*/
-/*}*/
-/*.tabs_nav{*/
-/*     padding-bottom: 91px;*/
-/*}*/
 
 .second_section {
     background: url("../img/Layer 21 1 (1).png");
@@ -289,7 +307,9 @@ button {
 .checkbox_section {
     margin-top: 97px;
     display: flex;
-
+}
+.label-btn{
+    height: 58px;
 }
 
 .label-btn input {
@@ -297,7 +317,6 @@ button {
     color: #717171;
     display: flex;
     justify-content: center;
-
 }
 
 .label-btn span {
@@ -420,6 +439,7 @@ button {
 
 .item1 {
     position: relative;
+    text-decoration: none;
 }
 
 
@@ -433,10 +453,6 @@ button {
     height: 68px;
 }
 
-.item1 {
-    text-decoration: none;
-}
-
 figcaption {
     display: flex;
     justify-content: center;
@@ -445,7 +461,6 @@ figcaption {
     line-height: 25px;
     align-items: center;
     text-align: center;
-
 }
 
 .frame_title {
@@ -469,10 +484,17 @@ figcaption {
     color: #777777;
 }
 
+.item1:hover .frame_title{
+    color: #18CFAB;
+}
+
+.item1:hover figcaption {
+    background-color: #18CFAB;
+}
+
 /*____________________Six section________________*/
 .six_section {
-    background: url("../img/Layer 333.png") no-repeat;
-
+    background: url("../img/Layer 333.png");
     height: 853px;
 }
 
@@ -493,10 +515,11 @@ figcaption {
 }
 
 /*____________________CAROUSEL________________*/
-.img_beans{
+.img_beans {
     margin-top: 99px;
     margin-bottom: 36px;
 }
+
 .slider {
     position: relative;
     display: flex;
@@ -535,7 +558,6 @@ figcaption {
 .item_img {
     display: flex;
     justify-content: center;
-
 }
 
 .testimonial {
@@ -555,11 +577,9 @@ figcaption {
 
 
 .carousel_img {
-
     display: flex;
     margin-top: 57px;
     margin-bottom: 104px;
-
 }
 
 .carousel_img img {
@@ -568,9 +588,22 @@ figcaption {
     border: 5px solid rgba(31, 218, 181, 0.2);
     border-radius: 50%;
     margin-right: 38px;
-
+    cursor: pointer;
 }
-.carousel_img img.active{
+
+.carousel_img img.active {
     position: relative;
     top: -13px;
+}
+
+.copyright {
+    text-align: center;
+    align-items: center;
+    color: #AEAEAE;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 26px;
+    padding: 47px;
+    margin: 0;
+    background: #22353F;
 }
