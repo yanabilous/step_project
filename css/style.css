@@ -65,11 +65,12 @@ li {
     height: 1px;
     background: #18CFAB;
     position: relative;
-  left: 4px;
+    left: 4px;
     top: 51px;
     margin: 0 auto;
 
 }
+
 .after::after {
     content: "";
     display: block;
@@ -231,6 +232,7 @@ button {
 .tabs-content li {
     display: none;
 }
+
 .tabs_nav {
     margin-bottom: 91px;
 }
@@ -298,6 +300,7 @@ button {
 /*_________________Four section__________________*/
 .four_section {
     background: #E9EDEF;
+    overflow: hidden;
 }
 
 .title_checkboxes {
@@ -308,7 +311,8 @@ button {
     margin-top: 97px;
     display: flex;
 }
-.label-btn{
+
+.label-btn {
     height: 58px;
 }
 
@@ -378,6 +382,7 @@ button {
 
 
 .card {
+    /*width: 285px;*/
     height: 206px;
 }
 
@@ -406,6 +411,7 @@ button {
     flex-direction: column;
     background-color: #E9EDEF;
     visibility: hidden;
+
     padding: 13px;
     width: 257px;
     height: 180px;
@@ -484,7 +490,7 @@ figcaption {
     color: #777777;
 }
 
-.item1:hover .frame_title{
+.item1:hover .frame_title {
     color: #18CFAB;
 }
 
@@ -529,29 +535,52 @@ figcaption {
 
 .arrowLeft {
     position: absolute;
-    bottom: calc(50% - 150px);
-    left: 308px;
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 7.5px 27px 7.5px 0;
-    border-color: transparent #18CFAB transparent transparent;
+    bottom: calc(50% - 157px);
+    left: 309px;
+    color: #BBBBBB;
+    background: rgba(0, 0, 0, 0.0001);
+    border: 1px solid #BBBBBB;
+    padding: 2px 8px;
+    /*display: inline-block;*/
+    /*width: 0;*/
+    /*height: 0;*/
+    /*border-style: solid;*/
+    /*border-width: 7.5px 27px 7.5px 0;*/
+    /*border-color: transparent #18CFAB transparent transparent;*/
     cursor: pointer;
 }
 
+.arrowLeft:hover {
+    background: #18CFAB;
+}
 
 .arrowRight {
     position: absolute;
-    bottom: calc(50% - 150px);
-    right: 340px;
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 7.5px 0 7.5px 27px;
-    border-color: transparent transparent transparent #18CFAB;
+    bottom: calc(50% - 157px);
+    right: 338px;
+    color: #BBBBBB;
+    background: rgba(0, 0, 0, 0.0001);
+    border: 1px solid #BBBBBB;
+    padding: 2px 8px;
+    /*position: absolute;*/
+    /*bottom: calc(50% - 150px);*/
+    /*right: 340px;*/
+    /*color: #FFFFFF;*/
+    /*background: rgba(0, 0, 0, 0.0001);*/
+    /*border: 1px solid #BBBBBB;*/
+    /*width: 31px;*/
+    /*height: 31px;*/
+    /*display: inline-block;*/
+    /*width: 0;*/
+    /*height: 0;*/
+    /*border-style: solid;*/
+    /*border-width: 7.5px 0 7.5px 27px;*/
+    /*border-color: transparent transparent transparent #18CFAB;*/
     cursor: pointer;
+}
+
+.arrowRight:hover {
+    background: #18CFAB;
 }
 
 
@@ -562,10 +591,22 @@ figcaption {
 
 .testimonial {
     display: none;
+    animation: testimonialOpacity 3s;
+
+}
+
+@keyframes testimonialOpacity {
+    from {
+        opacity: 0.1
+    }
+    to {
+        opacity: 3
+    }
 }
 
 .testimonial.active {
     display: block;
+
 }
 
 .item_img img {
