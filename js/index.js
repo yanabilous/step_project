@@ -3,9 +3,12 @@ ul.addEventListener("click", function (ev) {
     if (ev.target.classList.contains("tabs-title")) {
         document.querySelector(".tabs-title.active").classList.remove("active");
         document.querySelector(".tabs-content .active").classList.remove("active");
+        document.querySelector(".triangle-bottom.active").classList.remove("active");
+        ev.target.querySelector(".triangle-bottom").classList.add("active");
         document.querySelector(`#${ev.target.dataset.tabid}`).classList.add("active");
         ev.target.classList.add("active");
     }
+
 
 });
 
