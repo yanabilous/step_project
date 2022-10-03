@@ -21,6 +21,7 @@ header {
     color: white;
     display: flex;
     flex-direction: row;
+
 }
 
 .menu_list li {
@@ -30,7 +31,8 @@ header {
 
 .menu_list li:hover {
     color: #18CFAB;
-    /*border-bottom: 2px solid #18CFAB;*/
+    border-bottom: 2px solid #18CFAB;
+    padding: 47px 0;
 }
 
 li {
@@ -227,7 +229,19 @@ button {
 .img_tab {
     width: 192px;
     height: 139px;
-    margin-top: 20px;
+
+}
+
+.tabs-content {
+    padding-left: 0;
+}
+
+.tabs-content li {
+    margin-left: 0;
+}
+
+.tabs-content li p {
+    margin: 0 0 0 15px;
 }
 
 .tabs-content li {
@@ -239,7 +253,10 @@ button {
 }
 
 .tabs-content li.active {
-    display: block;
+    /*display: block;*/
+    display: flex;
+    /*justify-content: space-between;*/
+
 }
 
 .tabs-content li {
@@ -326,7 +343,6 @@ button {
 
 .label-btn span {
     display: inline-block;
-    /*padding: 5px 10px;*/
     padding: 17px;
     color: #717171;
     cursor: pointer;
